@@ -43,7 +43,7 @@ const Contact = () => {
             <div className="inline-block px-4 py-1.5 rounded-full glass border-white/5 text-[10px] font-black uppercase tracking-[0.3em] text-accent mb-2">
                 Available for New Challenges
             </div>
-            <h2 className="text-5xl md:text-8xl font-black tracking-tighter leading-tight">LET'S <span className="text-gradient">TALK.</span></h2>
+            <h2 className="text-5xl md:text-8xl font-black tracking-tighter leading-tight">LET&apos;S <span className="text-gradient">TALK.</span></h2>
             <div className="w-20 h-1 bg-accent rounded-full mb-8"></div>
             <p className="text-white/50 text-lg md:text-xl font-medium leading-relaxed max-w-lg">
               Have a visionary project in mind or just want to say hi? 

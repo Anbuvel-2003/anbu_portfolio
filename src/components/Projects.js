@@ -11,7 +11,7 @@ if (typeof window !== "undefined") {
 
 import Image from "next/image";
 
-const ProjectCard = ({ title, description, tags, index, image }) => {
+const ProjectCard = ({ title, description, tags, index, image, link }) => {
   const cardRef = useRef(null);
   const imageRef = useRef(null);
 
@@ -74,12 +74,14 @@ const ProjectCard = ({ title, description, tags, index, image }) => {
         <div className="absolute inset-0 bg-gradient-to-t from-[#030305] via-transparent to-transparent opacity-60"></div>
         
         <div className="absolute inset-0 bg-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-[2px] flex items-center justify-center gap-6 z-20">
-          <a href="#" className="p-4 bg-white/10 rounded-2xl hover:bg-accent hover:text-black hover:-translate-y-1 transition-all duration-300 backdrop-blur-md border border-white/10">
+          <a href="https://github.com/Anbuvel-2003" target="_blank" rel="noopener noreferrer" className="p-4 bg-white/10 rounded-2xl hover:bg-accent hover:text-black hover:-translate-y-1 transition-all duration-300 backdrop-blur-md border border-white/10">
             <Github size={24} />
           </a>
-          <a href="#" className="p-4 bg-white/10 rounded-2xl hover:bg-accent hover:text-black hover:-translate-y-1 transition-all duration-300 backdrop-blur-md border border-white/10">
-            <ExternalLink size={24} />
-          </a>
+          {link && (
+            <a href={link} target="_blank" rel="noopener noreferrer" className="p-4 bg-white/10 rounded-2xl hover:bg-accent hover:text-black hover:-translate-y-1 transition-all duration-300 backdrop-blur-md border border-white/10">
+              <ExternalLink size={24} />
+            </a>
+          )}
         </div>
         
         <div className="absolute top-6 right-6 p-3 glass rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 border border-white/10">
@@ -144,22 +146,44 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "Synthetix AI",
-      description: "Next-gen creative suite powered by generative models. Features real-time image manipulation and 3D scene generation.",
-      tags: ["Next.js 15", "PyTorch", "Three.js", "GSAP"],
+      title: "Albion Bank Auction",
+      description: "Find bank-auctioned properties at up to 50% below market price. Connects to 40,000+ repossessed properties.",
+      tags: ["React Native", "Firebase", "Real Estate"],
+      image: "/project_ai_mockup_1773157808334.png",
+      link: "https://play.google.com/store/apps/details?id=com.albionbankauctions"
+    },
+    {
+      title: "Cignix",
+      description: "Smoke quitting assistant with structured progress tracking and expert-led videos.",
+      tags: ["React Native", "Context API", "Health"],
+      image: "/project_health_mockup_1773157845606.png",
+      link: "https://play.google.com/store/apps/details?id=com.cignix"
+    },
+    {
+      title: "Truck Taxi",
+      description: "Full taxi booking ecosystem for both customers and drivers with real-time tracking.",
+      tags: ["React Native", "Maps API", "Logistics"],
+      image: "/project_web3_mockup_1773157827462.png",
+      link: "https://play.google.com/store/apps/details?id=com.trucktaxi"
+    },
+    {
+      title: "ShopQ",
+      description: "Complete E-commerce clothing application with product search, cart, and order tracking.",
+      tags: ["React Native", "Redux", "E-commerce"],
       image: "/project_ai_mockup_1773157808334.png"
     },
     {
-      title: "Vortex Meta",
-      description: "Decentralized social ecosystem built on Ethereum. Includes a virtual commerce engine and cross-chain asset management.",
-      tags: ["Solidity", "Go", "Ethers.js", "Redis"],
-      image: "/project_web3_mockup_1773157827462.png"
+      title: "ChatQ",
+      description: "Real-time communication app like WhatsApp with image/video sharing and admin controls.",
+      tags: ["React Native", "Firebase", "Social"],
+      image: "/project_health_mockup_1773157845606.png"
     },
     {
-      title: "Aura Health",
-      description: "AI-driven wellness platform providing predictive health analytics. Integrates with wearable devices for real-time feedback.",
-      tags: ["React Native", "TensorFlow", "Node.js", "PostgreSQL"],
-      image: "/project_health_mockup_1773157845606.png"
+      title: "MR Brothers",
+      description: "B2B E-commerce application for the gold industry with real-time updates.",
+      tags: ["React Native", "B2B", "Jewelry"],
+      image: "/project_web3_mockup_1773157827462.png",
+      link: "https://play.google.com/store/apps/details?id=com.mrbrothers"
     },
   ];
 

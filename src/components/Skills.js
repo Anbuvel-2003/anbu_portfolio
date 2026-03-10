@@ -127,14 +127,18 @@ const Skills = () => {
   }, []);
 
   const skills = [
-    { title: "Frontend Engineering", icon: Layout, description: "Next.js 15+, React 19, Tailwind, GSAP" },
-    { title: "Backend Systems", icon: Database, description: "Node.js, Go, PostgreSQL, Redis, GraphQL" },
-    { title: "Mobile Ecosystem", icon: Smartphone, description: "React Native, Expo, SwiftUI, Android" },
-    { title: "Infrastructure", icon: Settings, description: "Docker, K8s, Terraform, AWS, CI/CD" },
-    { title: "Cloud Architecture", icon: Cpu, description: "Microservices, Serverless, System Design" },
-    { title: "Edge Computing", icon: Globe, description: "Edge Functions, Supabase, Vercel" },
-    { title: "Visual Design", icon: Layers, description: "Figma, Design Systems, Prototypes" },
-    { title: "Performance", icon: Code2, description: "SEO, Web Vitals, Security, Optimization" },
+    { title: "React Native", icon: Smartphone, description: "Advanced Cross-Platform Mobile Apps" },
+    { title: "Next.js 15+", icon: Layers, description: "Server-Side Rendering & Performance" },
+    { title: "React JS", icon: Layout, description: "Single Page Web Applications" },
+    { title: "Firebase", icon: Database, description: "Auth, Firestore, Cloud Messaging" },
+    { title: "Node.js", icon: Settings, description: "Backend Systems & REST APIs" },
+    { title: "Redux Toolkit", icon: Cpu, description: "Scalable State Management" },
+    { title: "MongoDB", icon: Database, description: "NoSQL Data Architecture" },
+    { title: "Tailwind CSS", icon: Code2, description: "Modern Utility-First Styling" },
+    { title: "JavaScript", icon: Code2, description: "ES6+, Functional Programming" },
+    { title: "Bootstrap", icon: Layout, description: "Rapid Responsive UI Prototyping" },
+    { title: "HTML5/CSS3", icon: Code2, description: "Semantic Web & Modern Styling" },
+    { title: "GitHub", icon: Globe, description: "Version Control & CI/CD Pipelines" },
   ];
 
   return (

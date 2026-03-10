@@ -81,16 +81,16 @@ const Hero = () => {
           ref={textRef} 
           className="text-6xl md:text-[7rem] font-black tracking-tighter leading-[0.9] text-white"
         >
-          CRAFTING <span className="text-gradient">DIGITAL</span><br />
-          <span className="opacity-90">EXPERIENCES</span>
+          ANBUVEL <span className="text-gradient">S.</span><br />
+          <span className="opacity-90 leading-tight block mt-4 text-[4rem] md:text-[6rem]">FULL-STACK DEVELOPER</span>
         </h1>
         
         <p 
           ref={subTextRef} 
           className="text-lg md:text-2xl text-white/70 font-medium max-w-2xl mx-auto leading-relaxed"
         >
-          Architecting premium full-stack solutions with cutting-edge 
-          technologies and advanced interactive design.
+          Professional knowledge in creating responsive, dynamic, and 
+          user-friendly web and mobile applications using React and React Native.
         </p>
 
         <div ref={buttonRef} className="flex flex-col md:flex-row items-center justify-center gap-8 pt-6">

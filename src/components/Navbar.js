@@ -59,6 +59,7 @@ const Navbar = () => {
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
     { name: "Skills", href: "#skills" },
+    { name: "Experience", href: "#experience" },
     { name: "Projects", href: "#projects" },
     { name: "Contact", href: "#contact" },
   ];
@@ -78,7 +79,7 @@ const Navbar = () => {
              <div className="absolute inset-0 bg-white/30 opacity-0 group-hover/logo:opacity-100 transition-opacity"></div>
              <Sparkles size={20} className="text-black relative z-10" />
           </div>
-          <span className="text-sm font-black tracking-tighter text-gradient hidden lg:block uppercase transition-all group-hover/logo:tracking-widest">ANBU.DEV</span>
+          <span className="text-sm font-black tracking-tighter text-gradient hidden lg:block uppercase transition-all group-hover/logo:tracking-widest text-[#00f2ff]">ANBUVEL.DEV</span>
         </div>
 
         {/* Separator */}
